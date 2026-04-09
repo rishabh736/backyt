@@ -19,11 +19,7 @@ app.add_middleware(
 @app.get("/")
 async def health_check():
     """Endpoint for Render to verify the service is live."""
-    return {"status": "online", "message": ""machine_id": "ML-01",
-        "status": "Operational",
-        "vibration_score": 0.004,
-        "temperature": 42.5,
-        "anomalies_detected": 0,"}
+    return {"message": "Yantra Kavach Backend is Running"}
 
 @app.get("/api/machine-health")
 async def get_machine_health():
